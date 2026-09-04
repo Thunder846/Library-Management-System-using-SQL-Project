@@ -1,0 +1,22 @@
+Create table Employees(
+Emp_id char(10),
+Emp_name varchar(20),
+Position varchar (20),
+Salary varchar (10),
+Branch_id varchar (10),
+Primary key (Emp_id)
+);
+
+Insert into Employees (Emp_id, Emp_name, Position, Salary, Branch_id)
+values
+('E101','John Doe','Clerk','60000.00','B001'),
+('E102','Jane Smith','Clerk','45000.00','B002'),
+('E103','Mike Johnson','Librarian','55000.00','B001'),
+('E104','Emily Davis','Assistant','40000.00','B001'),
+('E105','Sarah Brown','Assistant','42000.00','B001'),
+('E106','Michelle Ramirez','Assistant','43000.00','B001'),
+('E107','Michael Thompson','Clerk','62000.00','B005'),
+('E108','Jessica Taylor','Clerk','46000.00','B004'),
+('E109','Daniel Anderson','Manager','57000.00','B003'),
+('E110','Laura Martinez','Manager','41000.00','B005'),
+('E111','Christopher Lee','Assistant','65000.00','B005');
