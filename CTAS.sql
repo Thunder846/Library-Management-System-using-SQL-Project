@@ -1,18 +1,14 @@
--- CTAS
--- Task 6: Create Summary Tables: Used CTAS to generate new tables based on query results - each book and total book_issued_cnt**
+-- CTAS: Creates a summary table showing how many times each book has been issued.
 
 CREATE TABLE book_cnts
 AS    
 SELECT 
     b.isbn,
     b.book_title,
-    COUNT(ist.issued_id) as no_issued
-FROM books as b
-JOIN
-issued_status as ist
-ON ist.issued_book_isbn = b.isbn
+    COUNT(ist.issued_id) AS no_issued
+FROM books AS b
+JOIN issued_status AS ist
+    ON ist.issued_book_isbn = b.isbn
 GROUP BY 1, 2;
 
-
-SELECT * FROM
-book_cnts;
+SELECT * FROM book_cnts;
